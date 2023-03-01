@@ -1,0 +1,12 @@
+<div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-lg-8">
+        <h1 class="text-white mb-4">Cyberstick</h1>
+        <p class="text-white-50">
+            A smart device that converts any non smart tv or monitor to a smart tv at zero subscription.
+            It allows users to stream unlimited contents when plugged in. get yours at <a href="https://cyberstick.io">cyberstick.io</a>
+        </p>
+    </div>
+</div>
+<div class="d-flex cyberstick-images">
+    <img class="img-fluid" src="assets/img/cyberstick_front2.png" alt="..." />
+</div>

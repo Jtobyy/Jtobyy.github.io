@@ -52,3 +52,20 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const textBlock = document.getElementById("random-text");
+const spans = textBlock.querySelectorAll("span");
+
+const classListOptions = [
+    "text-white",
+    "text-black",
+    "text-white-50",
+    "text-black-50"
+];
+
+setInterval(() => {
+    spans.forEach(span => {
+        const randomIndex = Math.floor(Math.random() * classListOptions.length);
+        span.className = classListOptions[randomIndex];
+    });
+}, 1000); // Change classes every 1000 milliseconds (1 second)

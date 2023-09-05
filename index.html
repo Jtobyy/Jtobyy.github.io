@@ -227,5 +227,18 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "db670781-16fa-4668-a546-533c7cc60544", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "0f8a002e-091f-45b8-9eac-b9091338c506", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
     </body>
 </html>

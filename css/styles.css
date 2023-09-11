@@ -11607,10 +11607,11 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 3rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
+  z-index: 3 !important;
   margin-bottom: 5rem;
 }
 
@@ -11728,4 +11729,7 @@ body {
 .text-block:hover .text-white,
 .text-block:hover .text-black {
   color: red;
+}
+.ipad-skills {
+  margin-top: -200px;
 }

@@ -16,7 +16,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="assets/font/stylesheet.css"/>
     </head>
-    
+
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                     </ul>
                 </div>
@@ -74,96 +74,142 @@
                 <img class="img-fluid ipad-skills" src="assets/img/skills.png" alt="..." />
             </div>
         </section>
+
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7">
-                        <a target="_blank" href="https://cyberhive-3c693.web.app/">
-                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/nativetalk_home.png" alt="..." />
-                        </a>
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <h2 class="text-black mt-0">Featured Projects</h2>
+                      <p class="text-black-50 mb-4">
+                        Below are some of the recent full-stack, backend, and QA projects I've built using tools like Python, Node.js, Express, Paystack, Stripe, Twilio, Docker, Cypress, and Postman.
+                        For more work, feel free to explore my <a href="https://github.com/Jtobyy" target="_blank">GitHub profile</a>. Some projects are kept private due to client agreements or legal constraints.
+                      </p>
                     </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Nativetalk</h4>
-                            <p class="text-black-50 mb-0">At NativeTalk, we specialize in delivering cutting-edge communication solutions tailored to elevate connectivity at every level. We empower businesses and individuals alike with the essential tools and technologies needed to thrive in today's dynamic digital landscape. As the creator behind NativeTalk's enterprise website, I bring innovation to life, seamlessly blending design and functionality. Let's embark on a journey to redefine communication, collaboration, and success in the fast-paced world of tomorrow.</p>
-                        </div>
-                    </div>
+                  </div>
+
+                <div class="col-lg-6">
+                  <!-- BidFlow Screenshots -->
+                  <img class="img-fluid mb-3" src="assets/img/bidflow_terminal.png" alt="BidFlow Terminal Output" />
+                  <img class="img-fluid" src="assets/img/bidflow_postman.png" alt="BidFlow Postman API" />
                 </div>
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/cybervilla_home.png" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Cybervilla</h4>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
+              
+                <div class="col-lg-6 ">
+                  <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                      <div class="project-text w-100 my-auto text-center text-lg-left py-0">
+                        <h4 class="text-white">BidFlow</h4>
+                        <p class="mb-3 text-white-50">
+                          An AI-powered backend for tender evaluation. It verifies bid documents, checks compliance, scores proposals, and generates automated reports.
+                        </p>
+                        <ul class="text-white-50 text-start mb-3">
+                          <li>Built with Django, PostgreSQL, Google Vision, OpenAI</li>
+                          <li>Includes RESTful API endpoints for tenders, bids, and evaluation</li>
+                          <li><a href="https://github.com/Jtobyy/bidflow-backend" class="text-white">GitHub Repo</a></li>
+                          <li><em>Postman collection available on request</em></li>
+                        </ul>
+                        <!-- How It Works Flowchart -->
+                        <h6 class="text-white mt-5 mb-3">How It Works</h6>
+                        <div class="bidflow-steps d-flex flex-column align-items-center text-white-50">
+
+                        <div class="step-box bg-danger text-white">Bid Documents Uploaded</div>
+                        <div class="arrow">&#8595;</div>
+
+                        <div class="step-box bg-primary text-white">OCR & AI Analysis</div>
+                        <div class="arrow">&#8595;</div>
+
+                        <div class="step-box bg-success text-white">Compliance Verification</div>
+                        <div class="arrow">&#8595;</div>
+
+                        <div class="step-box bg-purple text-white">Scoring & Ranking</div>
+                        <div class="arrow">&#8595;</div>
+
+                        <div class="step-box bg-dark text-white">Automated Evaluation Report Generation</div>
+                        <div class="arrow">&#8595;</div>
+
+                        <div class="step-box bg-warning text-dark">Procuring Entity Review & Decision</div>
+
                         </div>
+
+                          
+                        <hr class="d-none d-lg-block mt-4 mb-0 ms-0" />
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!-- Project Two Row-->
-                <div class="row gx-0 bg-black justify-content-center align-items-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/cyberhive_home.png" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Cyberhive</h4>
-                                    <p class="mb-0 text-white-50">Your Path to Cybersecurity Mastery. Explore expert courses, practice with interactive labs, and build coding skills for real-world challenges. Prepare for certifications, connect with peers, and track your progress. Join us and become a cybersecurity expert."</p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
+              </div>              
+              
+              <div class="row gx-0 mb-5 mt-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                  <img class="img-fluid mb-3" src="assets/img/crm_web_message.png" alt="Subscription & Billing Plans" />
+                  <img class="img-fluid" src="assets/img/crm_postman.png" alt="API Testing - Messaging Endpoint" />
+                </div>
+              
+                <div class="col-lg-6">
+                  <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                      <div class="project-text w-100 my-auto text-center text-lg-left">
+                        <h4 class="text-white">Omnichannel CRM Backend</h4>
+                        <p class="mb-3 text-white-50">
+                          A scalable backend system powering an Omnichannel CRM. Built features such as real-time messaging, agent-customer routing, RBAC, billing, and notification systems.
+                        </p>
+              
+                        <ul class="text-white-50 text-start mb-3">
+                          <li>Stack: Django, Django Channels, Redis, Firebase, Stripe and Paystack APIs</li>
+                          <li>REST APIs for Leads, Conversations, SLA, and Billing</li>
+                          <li>Includes RBAC, automated plan management, real-time chat, and SLA monitoring</li>
+                        </ul>
+              
+                        <h6 class="text-white mt-5">Key Features</h6>
+                        <ul class="text-white-50 text-start">
+                          <li>Omnichannel support: WhatsApp, Facebook, IG, Tiktok, Livechat, Call Center</li>
+                          <li>Role-based access (Admin, Agent, Billing)</li>
+                          <li>Subscription tiers with usage caps</li>
+                          <li>Realtime notifications + conversation updates</li>
+                          <li>Extensive API testing with Postman</li>
+                        </ul>
+              
+                        <hr class="d-none d-lg-block mt-4 mb-0 ms-0" />
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+              
+              <div class="row gx-0 mt-5 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6 order-lg-last">
+                    <img class="img-fluid rounded" src="assets/img/cypress_test.png" alt="Cypress Test Runner" />
+                    <img class="img-fluid rounded" src="assets/img/sample_code.png" alt="Sample Code" />
+                </div>
+              
+                <div class="col-lg-6">
+                  <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                      <div class="project-text w-100 my-auto text-center text-lg-left">
+                        <h4 class="text-white">QA Automation Suite</h4>
+                        <p class="mb-0 text-white-50">
+                          Built and maintained automated test pipelines to ensure backend and frontend reliability. Used Cypress for end-to-end testing of key user journeys across authentication, dashboards, and role-based access flows.
+                        </p>
+                        <ul class="text-white-50 text-start">
+                          <li>Tools: Cypress, JavaScript, SpecFlow, Postman</li>
+                          <li><em>Test repo available on request</em></li>
+                          <li><em>Includes login, navigation, and permission tests</em></li>
+                        </ul>
+                        <hr class="d-none d-lg-block mb-0 ms-0" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+                                                        
         </section>
+
         <!-- Signup-->
         <section class="signup-section" id="signup">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -177,7 +223,7 @@
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Railway Compound, Lagos.</div>
+                                <div class="small text-black-50">Lekki, Lagos.</div>
                             </div>
                         </div>
                     </div>
@@ -187,7 +233,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">olorunmeyanjoseph@gmail.com</a></div>
+                                <div class="small text-black-50"><a href="mailto:olorunmeyanjoseph@gmail.com">olorunmeyanjoseph@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -203,14 +249,23 @@
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://twitter.com/Jtobyy"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="https://www.facebook.com/joseph.tobi.54584/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="https://github.com/Jtobyy"><i class="fab fa-github"></i></a>
+                    <a class="mx-2" href="https://stackoverflow.com/users/12569412/jtoby" target="_blank">
+                        <i class="fab fa-stack-overflow"></i>
+                    </a>                      
+                    <a class="mx-2" href="https://www.linkedin.com/in/joseph-olorunmeyan/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>                      
+                    <a class="mx-2" href="https://github.com/Jtobyy" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Jtobyy 2022</div></footer>
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container px-4 px-lg-5">
+              Copyright &copy; Jtobyy <span id="copyright-years"></span>
+            </div>
+          </footer>
+          
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -237,5 +292,15 @@
           document.head.appendChild(t);
         });
       </script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var startYear = 2018;
+          var currentYear = new Date().getFullYear();
+          document.getElementById("copyright-years").textContent = 
+            (currentYear > startYear) ? (startYear + "–" + currentYear) : startYear;
+        });
+      </script>
+      
     </body>
 </html>
